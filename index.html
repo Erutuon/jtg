@@ -865,6 +865,7 @@ $('body').on('click', '.toggle-help', function(ev){
 
 $('body').on('keydown', function(ev){
 	if (ev.keyCode === 112) {
+		ev.preventDefault();
 		toggleHelp();
 	} else if (ev.keyCode === 27) {
 		ev.preventDefault();
